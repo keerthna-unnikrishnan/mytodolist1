@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,600;0,700;1,500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Barlow", sans-serif;
+    background-color: #0c4152;
+    color: #343a40;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #33cfd7;
+    background: -webkit-linear-gradient(to right, #069faa, #9be4d7);
+    background: linear-gradient(to right, #12bab7, #facde4);
+}
+
+.head1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #c7ccd1;
+}
+
+.head2 {
+    color: #c7ccd1;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    color: antiquewhite;
+}
+
+.todo-list {
+    list-style-type: none;
+    padding: 0;
+    color: antiquewhite;
+}
+
+.todo-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+input[type="checkbox"] {
+    margin-right: 18px;
+    transform: scale(1.5);
+}
+
+label {
+    flex-grow: 1;
+    margin-left: 18px;
+    font-size: x-large;
+}
+
+/* Media Queries for responsiveness */
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 95%;
+    }
+    input[type="checkbox"] {
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    input[type="checkbox"] {
+        transform: scale(1.2);
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .container {
+        width: 80%;
+    }
+}
